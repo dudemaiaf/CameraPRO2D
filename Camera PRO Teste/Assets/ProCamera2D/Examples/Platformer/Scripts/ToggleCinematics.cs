@@ -7,6 +7,11 @@ namespace Com.LuisPedroFonseca.ProCamera2D.Platformer
     {
         public ProCamera2DCinematics Cinematics;
 
+        private void Start()
+        {
+            Cinematics.Play();
+        }
+        /*
         void OnGUI()
         {
             if (GUI.Button(new Rect(5, 5, 180, 30), (Cinematics.IsPlaying ? "Stop" : "Start") + " Cinematics"))
@@ -25,5 +30,6 @@ namespace Com.LuisPedroFonseca.ProCamera2D.Platformer
                 }
             }
         }
+        */
     }
 }

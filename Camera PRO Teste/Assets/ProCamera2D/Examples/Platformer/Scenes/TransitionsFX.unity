@@ -1,19 +1,19 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
 --- !u!29 &1
-SceneSettings:
+OcclusionCullingSettings:
   m_ObjectHideFlags: 0
-  m_PVSData: 
-  m_PVSObjectsArray: []
-  m_PVSPortalsArray: []
+  serializedVersion: 2
   m_OcclusionBakeSettings:
     smallestOccluder: 5
     smallestHole: 0.25
     backfaceThreshold: 100
+  m_SceneGUID: 00000000000000000000000000000000
+  m_OcclusionCullingData: {fileID: 0}
 --- !u!104 &2
 RenderSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 6
+  serializedVersion: 9
   m_Fog: 0
   m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}
   m_FogMode: 3
@@ -25,6 +25,7 @@ RenderSettings:
   m_AmbientGroundColor: {r: 0.2, g: 0.2, b: 0.2, a: 1}
   m_AmbientIntensity: 1
   m_AmbientMode: 3
+  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}
   m_SkyboxMaterial: {fileID: 0}
   m_HaloStrength: 0.5
   m_FlareStrength: 1
@@ -37,12 +38,13 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
+  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}
+  m_UseRadianceAmbientProbe: 0
 --- !u!157 &4
 LightmapSettings:
   m_ObjectHideFlags: 0
-  serializedVersion: 6
+  serializedVersion: 11
   m_GIWorkflowMode: 1
-  m_LightmapsMode: 1
   m_GISettings:
     serializedVersion: 2
     m_BounceScale: 1
@@ -53,46 +55,72 @@ LightmapSettings:
     m_EnableBakedLightmaps: 1
     m_EnableRealtimeLightmaps: 0
   m_LightmapEditorSettings:
-    serializedVersion: 3
+    serializedVersion: 10
     m_Resolution: 1
     m_BakeResolution: 50
-    m_TextureWidth: 1024
-    m_TextureHeight: 1024
+    m_AtlasSize: 1024
+    m_AO: 0
     m_AOMaxDistance: 1
-    m_Padding: 2
     m_CompAOExponent: 0
+    m_CompAOExponentDirect: 0
+    m_Padding: 2
     m_LightmapParameters: {fileID: 0}
+    m_LightmapsBakeMode: 1
     m_TextureCompression: 0
     m_FinalGather: 0
+    m_FinalGatherFiltering: 1
     m_FinalGatherRayCount: 1024
     m_ReflectionCompression: 2
+    m_MixedBakeMode: 1
+    m_BakeBackend: 0
+    m_PVRSampling: 1
+    m_PVRDirectSampleCount: 32
+    m_PVRSampleCount: 500
+    m_PVRBounces: 2
+    m_PVRFilterTypeDirect: 0
+    m_PVRFilterTypeIndirect: 0
+    m_PVRFilterTypeAO: 0
+    m_PVRFilteringMode: 0
+    m_PVRCulling: 1
+    m_PVRFilteringGaussRadiusDirect: 1
+    m_PVRFilteringGaussRadiusIndirect: 5
+    m_PVRFilteringGaussRadiusAO: 2
+    m_PVRFilteringAtrousPositionSigmaDirect: 0.5
+    m_PVRFilteringAtrousPositionSigmaIndirect: 2
+    m_PVRFilteringAtrousPositionSigmaAO: 1
+    m_ShowResolutionOverlay: 1
   m_LightingDataAsset: {fileID: 0}
-  m_RuntimeCPUUsage: 25
+  m_UseShadowmask: 0
 --- !u!196 &5
 NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
     serializedVersion: 2
+    agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
     agentSlope: 45
     agentClimb: 0.4
     ledgeDropHeight: 0
     maxJumpAcrossDistance: 0
-    accuratePlacement: 0
     minRegionArea: 2
-    cellSize: 0.16666666
     manualCellSize: 0
+    cellSize: 0.16666666
+    manualTileSize: 0
+    tileSize: 256
+    accuratePlacement: 0
+    debug:
+      m_Flags: 0
   m_NavMeshData: {fileID: 0}
 --- !u!1 &6761589
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 6761590}
+  - component: {fileID: 6761590}
   m_Layer: 0
   m_Name: Pyramid (9)
   m_TagString: Untagged
@@ -113,6 +141,7 @@ Transform:
   - {fileID: 1644953191}
   m_Father: {fileID: 1441857156}
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &15889874
 Prefab:
   m_ObjectHideFlags: 0
@@ -172,9 +201,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 16900576}
+  - component: {fileID: 16900576}
   m_Layer: 0
   m_Name: Pyramid (8)
   m_TagString: Untagged
@@ -195,6 +224,7 @@ Transform:
   - {fileID: 1008040173}
   m_Father: {fileID: 1686697198}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &22624972
 Prefab:
   m_ObjectHideFlags: 0
@@ -258,9 +288,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 45969913}
+  - component: {fileID: 45969913}
   m_Layer: 0
   m_Name: Pyramid (10)
   m_TagString: Untagged
@@ -281,6 +311,7 @@ Transform:
   - {fileID: 57186356}
   m_Father: {fileID: 1218474493}
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &57186356 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -464,9 +495,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 79349757}
+  - component: {fileID: 79349757}
   m_Layer: 0
   m_Name: Pyramid (5)
   m_TagString: Untagged
@@ -487,6 +518,7 @@ Transform:
   - {fileID: 1907042018}
   m_Father: {fileID: 438030025}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &129940548 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -500,10 +532,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 140532, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 152762904}
-  - 108: {fileID: 152762905}
+  - component: {fileID: 152762904}
+  - component: {fileID: 152762905}
   m_Layer: 0
   m_Name: Directional light
   m_TagString: Untagged
@@ -523,6 +555,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1411124174}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!108 &152762905
 Light:
   m_ObjectHideFlags: 0
@@ -531,7 +564,7 @@ Light:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 152762903}
   m_Enabled: 1
-  serializedVersion: 6
+  serializedVersion: 8
   m_Type: 1
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Intensity: 1
@@ -541,6 +574,7 @@ Light:
   m_Shadows:
     m_Type: 0
     m_Resolution: -1
+    m_CustomResolution: -1
     m_Strength: 1
     m_Bias: 0.05
     m_NormalBias: 0.4
@@ -553,10 +587,12 @@ Light:
     serializedVersion: 2
     m_Bits: 4294967295
   m_Lightmapping: 4
+  m_AreaSize: {x: 1, y: 1}
   m_BounceIntensity: 1
+  m_ColorTemperature: 6570
+  m_UseColorTemperature: 0
   m_ShadowRadius: 0
   m_ShadowAngle: 0
-  m_AreaSize: {x: 1, y: 1}
 --- !u!1001 &165970919
 Prefab:
   m_ObjectHideFlags: 0
@@ -678,9 +714,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 191538357}
+  - component: {fileID: 191538357}
   m_Layer: 0
   m_Name: Pyramid
   m_TagString: Untagged
@@ -701,6 +737,7 @@ Transform:
   - {fileID: 701035100}
   m_Father: {fileID: 1441857156}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &198881535
 Prefab:
   m_ObjectHideFlags: 0
@@ -760,9 +797,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 205728354}
+  - component: {fileID: 205728354}
   m_Layer: 0
   m_Name: Pyramid (5)
   m_TagString: Untagged
@@ -783,14 +820,15 @@ Transform:
   - {fileID: 1833612288}
   m_Father: {fileID: 1441857156}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &216814749
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 216814750}
+  - component: {fileID: 216814750}
   m_Layer: 0
   m_Name: Pyramid (1)
   m_TagString: Untagged
@@ -811,6 +849,7 @@ Transform:
   - {fileID: 226355212}
   m_Father: {fileID: 1218474493}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &219913857
 Prefab:
   m_ObjectHideFlags: 0
@@ -994,9 +1033,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 268350613}
+  - component: {fileID: 268350613}
   m_Layer: 0
   m_Name: Pyramid (7)
   m_TagString: Untagged
@@ -1017,14 +1056,15 @@ Transform:
   - {fileID: 746289582}
   m_Father: {fileID: 1686697198}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &275481580
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 275481581}
+  - component: {fileID: 275481581}
   m_Layer: 0
   m_Name: Pyramid (6)
   m_TagString: Untagged
@@ -1045,6 +1085,7 @@ Transform:
   - {fileID: 1873684961}
   m_Father: {fileID: 1560924970}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &283783236
 Prefab:
   m_ObjectHideFlags: 0
@@ -1170,9 +1211,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 321690323}
+  - component: {fileID: 321690323}
   m_Layer: 0
   m_Name: Pyramid (5)
   m_TagString: Untagged
@@ -1193,6 +1234,7 @@ Transform:
   - {fileID: 1366178661}
   m_Father: {fileID: 1560924970}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &328578962 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -1260,9 +1302,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 367923168}
+  - component: {fileID: 367923168}
   m_Layer: 0
   m_Name: Pyramid (10)
   m_TagString: Untagged
@@ -1283,15 +1325,16 @@ Transform:
   - {fileID: 1015549378}
   m_Father: {fileID: 1686697198}
   m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &376007321
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 189796, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 376007322}
-  - 212: {fileID: 376007323}
+  - component: {fileID: 376007322}
+  - component: {fileID: 376007323}
   m_Layer: 12
   m_Name: BackgroundTop
   m_TagString: Untagged
@@ -1311,6 +1354,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1915535066}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &376007323
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1321,35 +1365,50 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 508a7439878cb470980c7c380e33c312, type: 3}
   m_Color: {r: 1, g: 0.7725491, b: 0.654902, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &381446403
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 381446404}
+  - component: {fileID: 381446404}
   m_Layer: 0
   m_Name: Pyramid (2)
   m_TagString: Untagged
@@ -1370,6 +1429,7 @@ Transform:
   - {fileID: 1391974515}
   m_Father: {fileID: 2127706914}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &387504768 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -1379,9 +1439,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 398216687}
+  - component: {fileID: 398216687}
   m_Layer: 0
   m_Name: Pyramid (1)
   m_TagString: Untagged
@@ -1402,6 +1462,7 @@ Transform:
   - {fileID: 737357951}
   m_Father: {fileID: 1686697198}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &430591674
 Prefab:
   m_ObjectHideFlags: 0
@@ -1461,12 +1522,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 115762, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 431222498}
-  - 33: {fileID: 431222501}
-  - 65: {fileID: 431222500}
-  - 23: {fileID: 431222499}
+  - component: {fileID: 431222498}
+  - component: {fileID: 431222501}
+  - component: {fileID: 431222500}
+  - component: {fileID: 431222499}
   m_Layer: 0
   m_Name: Cube (4)
   m_TagString: Untagged
@@ -1486,6 +1547,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 927953459}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &431222499
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1496,22 +1558,31 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: f55c4d26159b348748a4ce6e97625c9e, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!65 &431222500
 BoxCollider:
@@ -1593,9 +1664,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 438030025}
+  - component: {fileID: 438030025}
   m_Layer: 0
   m_Name: PyramidsMediumLeft
   m_TagString: Untagged
@@ -1625,14 +1696,15 @@ Transform:
   - {fileID: 1366339882}
   m_Father: {fileID: 1411124174}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &439295026
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 439295027}
+  - component: {fileID: 439295027}
   m_Layer: 0
   m_Name: Pyramid (7)
   m_TagString: Untagged
@@ -1653,14 +1725,15 @@ Transform:
   - {fileID: 328578962}
   m_Father: {fileID: 2127706914}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &454616566
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 454616567}
+  - component: {fileID: 454616567}
   m_Layer: 0
   m_Name: Pyramid (2)
   m_TagString: Untagged
@@ -1681,14 +1754,15 @@ Transform:
   - {fileID: 1098543257}
   m_Father: {fileID: 1560924970}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &486501213
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 486501214}
+  - component: {fileID: 486501214}
   m_Layer: 0
   m_Name: Pyramid (7)
   m_TagString: Untagged
@@ -1709,6 +1783,7 @@ Transform:
   - {fileID: 1467362098}
   m_Father: {fileID: 1560924970}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &487594134
 Prefab:
   m_ObjectHideFlags: 0
@@ -1768,9 +1843,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 494189675}
+  - component: {fileID: 494189675}
   m_Layer: 0
   m_Name: Pyramid (7)
   m_TagString: Untagged
@@ -1791,14 +1866,15 @@ Transform:
   - {fileID: 855909647}
   m_Father: {fileID: 438030025}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &506423180
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 506423181}
+  - component: {fileID: 506423181}
   m_Layer: 0
   m_Name: Pyramid (4)
   m_TagString: Untagged
@@ -1819,6 +1895,7 @@ Transform:
   - {fileID: 177184143}
   m_Father: {fileID: 1218474493}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &513199202
 Prefab:
   m_ObjectHideFlags: 0
@@ -1882,12 +1959,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 143432, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 518253610}
-  - 33: {fileID: 518253613}
-  - 65: {fileID: 518253612}
-  - 23: {fileID: 518253611}
+  - component: {fileID: 518253610}
+  - component: {fileID: 518253613}
+  - component: {fileID: 518253612}
+  - component: {fileID: 518253611}
   m_Layer: 0
   m_Name: Cube
   m_TagString: Untagged
@@ -1907,6 +1984,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 927953459}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &518253611
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1917,22 +1995,31 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: f55c4d26159b348748a4ce6e97625c9e, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!65 &518253612
 BoxCollider:
@@ -1960,9 +2047,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 520708536}
+  - component: {fileID: 520708536}
   m_Layer: 0
   m_Name: Pyramid (8)
   m_TagString: Untagged
@@ -1983,14 +2070,15 @@ Transform:
   - {fileID: 1227121323}
   m_Father: {fileID: 438030025}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &534127453
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 534127454}
+  - component: {fileID: 534127454}
   m_Layer: 0
   m_Name: Pyramid (1)
   m_TagString: Untagged
@@ -2011,14 +2099,15 @@ Transform:
   - {fileID: 1988941676}
   m_Father: {fileID: 438030025}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &546969806
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 546969807}
+  - component: {fileID: 546969807}
   m_Layer: 0
   m_Name: Pyramid (8)
   m_TagString: Untagged
@@ -2039,6 +2128,7 @@ Transform:
   - {fileID: 1802100455}
   m_Father: {fileID: 2127706914}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &556335802
 Prefab:
   m_ObjectHideFlags: 0
@@ -2102,10 +2192,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 188248, guid: 8908020d16c0f48eca7a7ffe52b9a680, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 558053159}
-  - 212: {fileID: 558053160}
+  - component: {fileID: 558053159}
+  - component: {fileID: 558053160}
   m_Layer: 0
   m_Name: Body
   m_TagString: Untagged
@@ -2125,6 +2215,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1339366278}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &558053160
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2135,35 +2226,50 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4d5c4c487f5bd49f3bbbae6c67e7ed0e, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &576161250
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 576161251}
+  - component: {fileID: 576161251}
   m_Layer: 0
   m_Name: Pyramid (7)
   m_TagString: Untagged
@@ -2184,6 +2290,7 @@ Transform:
   - {fileID: 1919469349}
   m_Father: {fileID: 1441857156}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &592041021
 Prefab:
   m_ObjectHideFlags: 0
@@ -2247,9 +2354,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 595365974}
+  - component: {fileID: 595365974}
   m_Layer: 0
   m_Name: Pyramid (3)
   m_TagString: Untagged
@@ -2270,14 +2377,15 @@ Transform:
   - {fileID: 1891830483}
   m_Father: {fileID: 438030025}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &611190618
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 160508, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1411124174}
+  - component: {fileID: 1411124174}
   m_Layer: 0
   m_Name: Level
   m_TagString: Untagged
@@ -2290,9 +2398,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 622688052}
+  - component: {fileID: 622688052}
   m_Layer: 0
   m_Name: Pyramid (9)
   m_TagString: Untagged
@@ -2313,14 +2421,15 @@ Transform:
   - {fileID: 1134700947}
   m_Father: {fileID: 1560924970}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &624598552
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 624598553}
+  - component: {fileID: 624598553}
   m_Layer: 0
   m_Name: Pyramid (3)
   m_TagString: Untagged
@@ -2341,6 +2450,7 @@ Transform:
   - {fileID: 951021131}
   m_Father: {fileID: 1218474493}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &627486020
 Prefab:
   m_ObjectHideFlags: 0
@@ -2508,9 +2618,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 678125835}
+  - component: {fileID: 678125835}
   m_Layer: 0
   m_Name: Pyramid (9)
   m_TagString: Untagged
@@ -2531,6 +2641,7 @@ Transform:
   - {fileID: 517780263}
   m_Father: {fileID: 438030025}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &700449988
 Prefab:
   m_ObjectHideFlags: 0
@@ -2598,9 +2709,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 744738344}
+  - component: {fileID: 744738344}
   m_Layer: 0
   m_Name: Pyramid (8)
   m_TagString: Untagged
@@ -2621,6 +2732,7 @@ Transform:
   - {fileID: 1888749076}
   m_Father: {fileID: 1218474493}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &746289582 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -2634,9 +2746,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 761939777}
+  - component: {fileID: 761939777}
   m_Layer: 0
   m_Name: Pyramid (9)
   m_TagString: Untagged
@@ -2657,6 +2769,7 @@ Transform:
   - {fileID: 1851456795}
   m_Father: {fileID: 2127706914}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &764308511 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -2720,10 +2833,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 161902, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 774784747}
-  - 212: {fileID: 774784748}
+  - component: {fileID: 774784747}
+  - component: {fileID: 774784748}
   m_Layer: 12
   m_Name: BackgroundBottom (1)
   m_TagString: Untagged
@@ -2743,6 +2856,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1915535066}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &774784748
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -2753,35 +2867,50 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 508a7439878cb470980c7c380e33c312, type: 3}
   m_Color: {r: 0.49411768, g: 0.21176472, b: 0.1137255, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &833460134
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 833460135}
+  - component: {fileID: 833460135}
   m_Layer: 0
   m_Name: Pyramid (9)
   m_TagString: Untagged
@@ -2802,14 +2931,15 @@ Transform:
   - {fileID: 761499319}
   m_Father: {fileID: 1686697198}
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &845288043
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 845288044}
+  - component: {fileID: 845288044}
   m_Layer: 0
   m_Name: Pyramid (2)
   m_TagString: Untagged
@@ -2830,6 +2960,7 @@ Transform:
   - {fileID: 1719822845}
   m_Father: {fileID: 1441857156}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &848460431 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -2843,9 +2974,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 860179756}
+  - component: {fileID: 860179756}
   m_Layer: 0
   m_Name: Pyramid (1)
   m_TagString: Untagged
@@ -2866,17 +2997,18 @@ Transform:
   - {fileID: 2034228277}
   m_Father: {fileID: 1560924970}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &860379147
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 125576, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 860379148}
-  - 33: {fileID: 860379151}
-  - 65: {fileID: 860379150}
-  - 23: {fileID: 860379149}
+  - component: {fileID: 860379148}
+  - component: {fileID: 860379151}
+  - component: {fileID: 860379150}
+  - component: {fileID: 860379149}
   m_Layer: 0
   m_Name: Cube (1)
   m_TagString: Untagged
@@ -2896,6 +3028,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 927953459}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &860379149
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -2906,22 +3039,31 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: f55c4d26159b348748a4ce6e97625c9e, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!65 &860379150
 BoxCollider:
@@ -3007,12 +3149,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 143570, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 877686482}
-  - 33: {fileID: 877686485}
-  - 65: {fileID: 877686484}
-  - 23: {fileID: 877686483}
+  - component: {fileID: 877686482}
+  - component: {fileID: 877686485}
+  - component: {fileID: 877686484}
+  - component: {fileID: 877686483}
   m_Layer: 0
   m_Name: Cube (3)
   m_TagString: Untagged
@@ -3032,6 +3174,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 927953459}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &877686483
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3042,22 +3185,31 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: f55c4d26159b348748a4ce6e97625c9e, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!65 &877686484
 BoxCollider:
@@ -3139,9 +3291,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 110264, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 927953459}
+  - component: {fileID: 927953459}
   m_Layer: 0
   m_Name: Platforms
   m_TagString: Untagged
@@ -3171,14 +3323,15 @@ Transform:
   - {fileID: 1757819943}
   m_Father: {fileID: 1411124174}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &930798160
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 930798161}
+  - component: {fileID: 930798161}
   m_Layer: 0
   m_Name: Pyramid (2)
   m_TagString: Untagged
@@ -3199,16 +3352,17 @@ Transform:
   - {fileID: 1742045162}
   m_Father: {fileID: 438030025}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &934839566
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 104406, guid: 8908020d16c0f48eca7a7ffe52b9a680, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1339366278}
-  - 143: {fileID: 934839568}
-  - 114: {fileID: 934839567}
+  - component: {fileID: 1339366278}
+  - component: {fileID: 934839568}
+  - component: {fileID: 934839567}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -3327,9 +3481,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 970354021}
+  - component: {fileID: 970354021}
   m_Layer: 0
   m_Name: Pyramid (4)
   m_TagString: Untagged
@@ -3350,6 +3504,7 @@ Transform:
   - {fileID: 2073872638}
   m_Father: {fileID: 438030025}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &971974051
 Prefab:
   m_ObjectHideFlags: 0
@@ -3471,12 +3626,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 190918, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 983727625}
-  - 33: {fileID: 983727628}
-  - 65: {fileID: 983727627}
-  - 23: {fileID: 983727626}
+  - component: {fileID: 983727625}
+  - component: {fileID: 983727628}
+  - component: {fileID: 983727627}
+  - component: {fileID: 983727626}
   m_Layer: 0
   m_Name: Cube (7)
   m_TagString: Untagged
@@ -3496,6 +3651,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 927953459}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &983727626
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -3506,22 +3662,31 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: f55c4d26159b348748a4ce6e97625c9e, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!65 &983727627
 BoxCollider:
@@ -3549,9 +3714,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 996321431}
+  - component: {fileID: 996321431}
   m_Layer: 0
   m_Name: Pyramid (6)
   m_TagString: Untagged
@@ -3572,6 +3737,7 @@ Transform:
   - {fileID: 1948839885}
   m_Father: {fileID: 1218474493}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1008040173 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -3755,9 +3921,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1058472671}
+  - component: {fileID: 1058472671}
   m_Layer: 0
   m_Name: Pyramid (3)
   m_TagString: Untagged
@@ -3778,6 +3944,7 @@ Transform:
   - {fileID: 2043992024}
   m_Father: {fileID: 2127706914}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1064540860
 Prefab:
   m_ObjectHideFlags: 0
@@ -3837,9 +4004,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1066083181}
+  - component: {fileID: 1066083181}
   m_Layer: 0
   m_Name: Pyramid (3)
   m_TagString: Untagged
@@ -3860,6 +4027,7 @@ Transform:
   - {fileID: 65039165}
   m_Father: {fileID: 1560924970}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1098543257 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -3869,9 +4037,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1101241017}
+  - component: {fileID: 1101241017}
   m_Layer: 0
   m_Name: Pyramid (8)
   m_TagString: Untagged
@@ -3892,6 +4060,7 @@ Transform:
   - {fileID: 189819974}
   m_Father: {fileID: 1560924970}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1109006211
 Prefab:
   m_ObjectHideFlags: 0
@@ -3951,9 +4120,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1116083986}
+  - component: {fileID: 1116083986}
   m_Layer: 0
   m_Name: Pyramid (10)
   m_TagString: Untagged
@@ -3974,6 +4143,7 @@ Transform:
   - {fileID: 1639389631}
   m_Father: {fileID: 1441857156}
   m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1134700947 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -3983,12 +4153,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 162806, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1147031222}
-  - 33: {fileID: 1147031225}
-  - 65: {fileID: 1147031224}
-  - 23: {fileID: 1147031223}
+  - component: {fileID: 1147031222}
+  - component: {fileID: 1147031225}
+  - component: {fileID: 1147031224}
+  - component: {fileID: 1147031223}
   m_Layer: 0
   m_Name: Cube (5)
   m_TagString: Untagged
@@ -4008,6 +4178,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 927953459}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1147031223
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -4018,22 +4189,31 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: f55c4d26159b348748a4ce6e97625c9e, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!65 &1147031224
 BoxCollider:
@@ -4061,10 +4241,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 124028, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1149623928}
-  - 212: {fileID: 1149623929}
+  - component: {fileID: 1149623928}
+  - component: {fileID: 1149623929}
   m_Layer: 12
   m_Name: Ground
   m_TagString: Untagged
@@ -4084,6 +4264,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1915535066}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1149623929
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4094,35 +4275,50 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 57a291d06bb28429b96bf477524b59f5, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &1163717525
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1163717526}
+  - component: {fileID: 1163717526}
   m_Layer: 0
   m_Name: Pyramid (6)
   m_TagString: Untagged
@@ -4143,14 +4339,15 @@ Transform:
   - {fileID: 764308511}
   m_Father: {fileID: 1441857156}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1164707788
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1164707789}
+  - component: {fileID: 1164707789}
   m_Layer: 0
   m_Name: Pyramid (3)
   m_TagString: Untagged
@@ -4171,6 +4368,7 @@ Transform:
   - {fileID: 1039902366}
   m_Father: {fileID: 1686697198}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1173540918
 Prefab:
   m_ObjectHideFlags: 0
@@ -4346,9 +4544,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1218474493}
+  - component: {fileID: 1218474493}
   m_Layer: 0
   m_Name: PyramidsMediumRight
   m_TagString: Untagged
@@ -4378,6 +4576,7 @@ Transform:
   - {fileID: 45969913}
   m_Father: {fileID: 1411124174}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1227121323 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -4387,9 +4586,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1239400322}
+  - component: {fileID: 1239400322}
   m_Layer: 0
   m_Name: Pyramid (6)
   m_TagString: Untagged
@@ -4410,14 +4609,15 @@ Transform:
   - {fileID: 2007681911}
   m_Father: {fileID: 2127706914}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1242992718
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1242992719}
+  - component: {fileID: 1242992719}
   m_Layer: 0
   m_Name: Pyramid (4)
   m_TagString: Untagged
@@ -4438,15 +4638,16 @@ Transform:
   - {fileID: 129940548}
   m_Father: {fileID: 2127706914}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1245723618
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 161902, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1245723619}
-  - 212: {fileID: 1245723620}
+  - component: {fileID: 1245723619}
+  - component: {fileID: 1245723620}
   m_Layer: 12
   m_Name: BackgroundBottom
   m_TagString: Untagged
@@ -4466,6 +4667,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1915535066}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1245723620
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -4476,27 +4678,42 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 508a7439878cb470980c7c380e33c312, type: 3}
   m_Color: {r: 0.49411768, g: 0.21176472, b: 0.1137255, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1001 &1263492646
 Prefab:
   m_ObjectHideFlags: 0
@@ -4668,9 +4885,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1309330757}
+  - component: {fileID: 1309330757}
   m_Layer: 0
   m_Name: Pyramid (5)
   m_TagString: Untagged
@@ -4691,6 +4908,7 @@ Transform:
   - {fileID: 367139979}
   m_Father: {fileID: 1218474493}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1311817453 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -4700,9 +4918,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1325590735}
+  - component: {fileID: 1325590735}
   m_Layer: 0
   m_Name: Pyramid (5)
   m_TagString: Untagged
@@ -4723,6 +4941,7 @@ Transform:
   - {fileID: 302663003}
   m_Father: {fileID: 2127706914}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1339366278
 Transform:
   m_ObjectHideFlags: 0
@@ -4736,6 +4955,7 @@ Transform:
   - {fileID: 558053159}
   m_Father: {fileID: 0}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1342183847
 Prefab:
   m_ObjectHideFlags: 0
@@ -4799,15 +5019,15 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1347611046}
-  - 20: {fileID: 1347611045}
-  - 92: {fileID: 1347611044}
-  - 124: {fileID: 1347611043}
-  - 81: {fileID: 1347611042}
-  - 114: {fileID: 1347611047}
-  - 114: {fileID: 1347611048}
+  - component: {fileID: 1347611046}
+  - component: {fileID: 1347611045}
+  - component: {fileID: 1347611044}
+  - component: {fileID: 1347611043}
+  - component: {fileID: 1347611042}
+  - component: {fileID: 1347611047}
+  - component: {fileID: 1347611048}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -4866,10 +5086,12 @@ Camera:
   m_TargetDisplay: 0
   m_TargetEye: 3
   m_HDR: 0
+  m_AllowMSAA: 1
+  m_AllowDynamicResolution: 0
+  m_ForceIntoRT: 0
   m_OcclusionCulling: 1
   m_StereoConvergence: 10
   m_StereoSeparation: 0.022
-  m_StereoMirrorMode: 0
 --- !u!4 &1347611046
 Transform:
   m_ObjectHideFlags: 0
@@ -4882,6 +5104,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1347611047
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4905,7 +5128,9 @@ MonoBehaviour:
   HorizontalFollowSmoothness: 0.2
   FollowVertical: 1
   VerticalFollowSmoothness: 0.4
-  OverallOffset: {x: 0, y: 0}
+  OffsetX: 0
+  OffsetY: 0
+  IsRelativeOffset: 1
   ZoomWithFOV: 0
   CurrentZoomTriggerID: 0
   IsCameraPositionLeftBounded: 0
@@ -4913,7 +5138,6 @@ MonoBehaviour:
   IsCameraPositionTopBounded: 0
   IsCameraPositionBottomBounded: 0
   GameCamera: {fileID: 1347611045}
-  Tk2dCam: {fileID: 0}
 --- !u!114 &1347611048
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4925,7 +5149,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d1eca57db7d394266ae024997acf4456, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ProCamera2D: {fileID: 1347611047}
+  _pc2D: {fileID: 1347611047}
   TransitionShaderEnter: 5
   DurationEnter: 1
   DelayEnter: 0
@@ -4942,11 +5166,12 @@ MonoBehaviour:
   EaseTypeExit: 1
   BackgroundColorExit: {r: 0, g: 0, b: 0, a: 1}
   SideExit: 0
-  DirectionExit: 0
+  DirectionExit: 1
   BlindsExit: 16
   TextureExit: {fileID: 2800000, guid: 52c0eae9fffb947308dc66fa436b1a1a, type: 3}
   TextureSmoothingExit: 0.3
   StartSceneOnEnterState: 1
+  UseRealtime: 1
 --- !u!4 &1366178661 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -4956,9 +5181,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1366339882}
+  - component: {fileID: 1366339882}
   m_Layer: 0
   m_Name: Pyramid (10)
   m_TagString: Untagged
@@ -4979,6 +5204,7 @@ Transform:
   - {fileID: 1821764822}
   m_Father: {fileID: 438030025}
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1391974515 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -4988,9 +5214,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1399496603}
+  - component: {fileID: 1399496603}
   m_Layer: 0
   m_Name: Pyramid (6)
   m_TagString: Untagged
@@ -5011,6 +5237,7 @@ Transform:
   - {fileID: 977318039}
   m_Father: {fileID: 1686697198}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1411124174
 Transform:
   m_ObjectHideFlags: 0
@@ -5032,6 +5259,7 @@ Transform:
   - {fileID: 1218474493}
   m_Father: {fileID: 0}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1435448624 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -5045,9 +5273,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1441857156}
+  - component: {fileID: 1441857156}
   m_Layer: 0
   m_Name: PyramidsDarkRight
   m_TagString: Untagged
@@ -5078,6 +5306,7 @@ Transform:
   - {fileID: 1116083986}
   m_Father: {fileID: 1411124174}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1450924649 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -5145,12 +5374,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 177664, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1471165652}
-  - 33: {fileID: 1471165655}
-  - 65: {fileID: 1471165654}
-  - 23: {fileID: 1471165653}
+  - component: {fileID: 1471165652}
+  - component: {fileID: 1471165655}
+  - component: {fileID: 1471165654}
+  - component: {fileID: 1471165653}
   m_Layer: 0
   m_Name: Cube (2)
   m_TagString: Untagged
@@ -5170,6 +5399,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 927953459}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1471165653
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5180,22 +5410,31 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: f55c4d26159b348748a4ce6e97625c9e, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!65 &1471165654
 BoxCollider:
@@ -5223,9 +5462,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1477083727}
+  - component: {fileID: 1477083727}
   m_Layer: 0
   m_Name: Pyramid (4)
   m_TagString: Untagged
@@ -5246,6 +5485,7 @@ Transform:
   - {fileID: 1788032052}
   m_Father: {fileID: 1441857156}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1482355195
 Prefab:
   m_ObjectHideFlags: 0
@@ -5359,9 +5599,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1505929232}
+  - component: {fileID: 1505929232}
   m_Layer: 0
   m_Name: Pyramid (2)
   m_TagString: Untagged
@@ -5382,14 +5622,15 @@ Transform:
   - {fileID: 1439417177}
   m_Father: {fileID: 1218474493}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1560924969
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1560924970}
+  - component: {fileID: 1560924970}
   m_Layer: 0
   m_Name: PyramidsLightRight
   m_TagString: Untagged
@@ -5418,6 +5659,7 @@ Transform:
   - {fileID: 622688052}
   m_Father: {fileID: 1411124174}
   m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1571180816
 Prefab:
   m_ObjectHideFlags: 0
@@ -5481,9 +5723,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1573557052}
+  - component: {fileID: 1573557052}
   m_Layer: 0
   m_Name: Pyramid (1)
   m_TagString: Untagged
@@ -5504,14 +5746,15 @@ Transform:
   - {fileID: 1311817453}
   m_Father: {fileID: 1441857156}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1582685139
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1582685140}
+  - component: {fileID: 1582685140}
   m_Layer: 0
   m_Name: Pyramid (2)
   m_TagString: Untagged
@@ -5532,6 +5775,7 @@ Transform:
   - {fileID: 255395781}
   m_Father: {fileID: 1686697198}
   m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1639389631 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -5599,9 +5843,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1650030044}
+  - component: {fileID: 1650030044}
   m_Layer: 0
   m_Name: Pyramid (5)
   m_TagString: Untagged
@@ -5622,6 +5866,7 @@ Transform:
   - {fileID: 848460431}
   m_Father: {fileID: 1686697198}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1662395023
 Prefab:
   m_ObjectHideFlags: 0
@@ -5735,9 +5980,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1686697198}
+  - component: {fileID: 1686697198}
   m_Layer: 0
   m_Name: PyramidsDarkLeft
   m_TagString: Untagged
@@ -5768,15 +6013,16 @@ Transform:
   - {fileID: 367923168}
   m_Father: {fileID: 1411124174}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1692125785
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 161902, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1692125786}
-  - 212: {fileID: 1692125787}
+  - component: {fileID: 1692125786}
+  - component: {fileID: 1692125787}
   m_Layer: 12
   m_Name: BackgroundBottom (2)
   m_TagString: Untagged
@@ -5796,6 +6042,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1915535066}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1692125787
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5806,35 +6053,50 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 508a7439878cb470980c7c380e33c312, type: 3}
   m_Color: {r: 0.49411768, g: 0.21176472, b: 0.1137255, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!1 &1718826341
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1718826342}
+  - component: {fileID: 1718826342}
   m_Layer: 0
   m_Name: Pyramid
   m_TagString: Untagged
@@ -5855,6 +6117,7 @@ Transform:
   - {fileID: 1818528884}
   m_Father: {fileID: 1686697198}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1719822845 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -5922,9 +6185,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1756746390}
+  - component: {fileID: 1756746390}
   m_Layer: 0
   m_Name: Pyramid (4)
   m_TagString: Untagged
@@ -5945,17 +6208,18 @@ Transform:
   - {fileID: 969983487}
   m_Father: {fileID: 1560924970}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1757819942
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 150002, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1757819943}
-  - 33: {fileID: 1757819946}
-  - 65: {fileID: 1757819945}
-  - 23: {fileID: 1757819944}
+  - component: {fileID: 1757819943}
+  - component: {fileID: 1757819946}
+  - component: {fileID: 1757819945}
+  - component: {fileID: 1757819944}
   m_Layer: 0
   m_Name: Cube (9)
   m_TagString: Untagged
@@ -5975,6 +6239,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 927953459}
   m_RootOrder: 9
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1757819944
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -5985,22 +6250,31 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: f55c4d26159b348748a4ce6e97625c9e, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!65 &1757819945
 BoxCollider:
@@ -6028,10 +6302,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 124028, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1760094284}
-  - 212: {fileID: 1760094285}
+  - component: {fileID: 1760094284}
+  - component: {fileID: 1760094285}
   m_Layer: 12
   m_Name: Background
   m_TagString: Untagged
@@ -6051,6 +6325,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 1915535066}
   m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &1760094285
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -6061,27 +6336,42 @@ SpriteRenderer:
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
-  m_Materials:
-  - {fileID: 10754, guid: 0000000000000000e000000000000000, type: 0}
-  m_SubsetIndices: 
-  m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
   m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
+  m_Materials:
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
+  m_StaticBatchRoot: {fileID: 0}
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 0
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: e11d579b5508f47198cf5697ec3f372d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
+  m_DrawMode: 0
+  m_Size: {x: 1, y: 1}
+  m_AdaptiveModeThreshold: 0.5
+  m_SpriteTileMode: 0
+  m_WasSpriteAssigned: 1
+  m_MaskInteraction: 0
 --- !u!4 &1788032052 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -6095,9 +6385,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1812870175}
+  - component: {fileID: 1812870175}
   m_Layer: 0
   m_Name: Pyramid (3)
   m_TagString: Untagged
@@ -6118,6 +6408,7 @@ Transform:
   - {fileID: 1266203265}
   m_Father: {fileID: 1441857156}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1818528884 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -6131,9 +6422,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1822778744}
+  - component: {fileID: 1822778744}
   m_Layer: 0
   m_Name: Pyramid (6)
   m_TagString: Untagged
@@ -6154,6 +6445,7 @@ Transform:
   - {fileID: 1435448624}
   m_Father: {fileID: 438030025}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1831949646
 Prefab:
   m_ObjectHideFlags: 0
@@ -6217,9 +6509,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1834224434}
+  - component: {fileID: 1834224434}
   m_Layer: 0
   m_Name: Pyramid (8)
   m_TagString: Untagged
@@ -6240,6 +6532,7 @@ Transform:
   - {fileID: 36850190}
   m_Father: {fileID: 1441857156}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1851456795 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -6303,9 +6596,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1872168611}
+  - component: {fileID: 1872168611}
   m_Layer: 0
   m_Name: Pyramid (9)
   m_TagString: Untagged
@@ -6326,6 +6619,7 @@ Transform:
   - {fileID: 1450924649}
   m_Father: {fileID: 1218474493}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1873684961 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -6509,12 +6803,12 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 102652, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1909558117}
-  - 33: {fileID: 1909558120}
-  - 65: {fileID: 1909558119}
-  - 23: {fileID: 1909558118}
+  - component: {fileID: 1909558117}
+  - component: {fileID: 1909558120}
+  - component: {fileID: 1909558119}
+  - component: {fileID: 1909558118}
   m_Layer: 0
   m_Name: Cube (8)
   m_TagString: Untagged
@@ -6534,6 +6828,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 927953459}
   m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &1909558118
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -6544,22 +6839,31 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: f55c4d26159b348748a4ce6e97625c9e, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!65 &1909558119
 BoxCollider:
@@ -6587,9 +6891,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 176256, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 1915535066}
+  - component: {fileID: 1915535066}
   m_Layer: 12
   m_Name: Sprites
   m_TagString: Untagged
@@ -6615,6 +6919,7 @@ Transform:
   - {fileID: 1149623928}
   m_Father: {fileID: 1411124174}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1919469349 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -6802,9 +7107,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 2012388937}
+  - component: {fileID: 2012388937}
   m_Layer: 0
   m_Name: Pyramid (1)
   m_TagString: Untagged
@@ -6825,6 +7130,7 @@ Transform:
   - {fileID: 387504768}
   m_Father: {fileID: 2127706914}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2020128819
 Prefab:
   m_ObjectHideFlags: 0
@@ -6884,10 +7190,10 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 2020961134}
-  - 114: {fileID: 2020961133}
+  - component: {fileID: 2020961134}
+  - component: {fileID: 2020961133}
   m_Layer: 0
   m_Name: ToggleTransitions
   m_TagString: Untagged
@@ -6918,6 +7224,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2034228277 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -6931,9 +7238,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 2065884595}
+  - component: {fileID: 2065884595}
   m_Layer: 0
   m_Name: Pyramid (4)
   m_TagString: Untagged
@@ -6954,6 +7261,7 @@ Transform:
   - {fileID: 150962705}
   m_Father: {fileID: 1686697198}
   m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &2073872638 stripped
 Transform:
   m_PrefabParentObject: {fileID: 400000, guid: 860b5946caa9143b098b605936d9c739, type: 3}
@@ -6963,9 +7271,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 2077150002}
+  - component: {fileID: 2077150002}
   m_Layer: 0
   m_Name: Pyramid (7)
   m_TagString: Untagged
@@ -6986,6 +7294,7 @@ Transform:
   - {fileID: 940176324}
   m_Father: {fileID: 1218474493}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &2101646462
 Prefab:
   m_ObjectHideFlags: 0
@@ -7049,9 +7358,9 @@ GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 2127706914}
+  - component: {fileID: 2127706914}
   m_Layer: 0
   m_Name: PyramidsLightLeft
   m_TagString: Untagged
@@ -7080,17 +7389,18 @@ Transform:
   - {fileID: 761939777}
   m_Father: {fileID: 1411124174}
   m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2134720659
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 119972, guid: f041036210ca24c12ad93ebdb067910f, type: 2}
   m_PrefabInternal: {fileID: 0}
-  serializedVersion: 4
+  serializedVersion: 5
   m_Component:
-  - 4: {fileID: 2134720660}
-  - 33: {fileID: 2134720663}
-  - 65: {fileID: 2134720662}
-  - 23: {fileID: 2134720661}
+  - component: {fileID: 2134720660}
+  - component: {fileID: 2134720663}
+  - component: {fileID: 2134720662}
+  - component: {fileID: 2134720661}
   m_Layer: 0
   m_Name: Cube (6)
   m_TagString: Untagged
@@ -7110,6 +7420,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 927953459}
   m_RootOrder: 6
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &2134720661
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -7120,22 +7431,31 @@ MeshRenderer:
   m_Enabled: 1
   m_CastShadows: 1
   m_ReceiveShadows: 1
+  m_DynamicOccludee: 1
+  m_MotionVectors: 1
+  m_LightProbeUsage: 1
+  m_ReflectionProbeUsage: 1
+  m_RenderingLayerMask: 4294967295
   m_Materials:
   - {fileID: 2100000, guid: f55c4d26159b348748a4ce6e97625c9e, type: 2}
-  m_SubsetIndices: 
+  m_StaticBatchInfo:
+    firstSubMesh: 0
+    subMeshCount: 0
   m_StaticBatchRoot: {fileID: 0}
-  m_UseLightProbes: 1
-  m_ReflectionProbeUsage: 1
   m_ProbeAnchor: {fileID: 0}
+  m_LightProbeVolumeOverride: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 1
   m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_StitchLightmapSeams: 0
+  m_SelectedEditorRenderState: 3
   m_MinimumChartSize: 4
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
+  m_SortingLayer: 0
   m_SortingOrder: 0
 --- !u!65 &2134720662
 BoxCollider:

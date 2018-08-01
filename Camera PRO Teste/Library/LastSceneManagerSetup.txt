@@ -1,4 +1,4 @@
 sceneSetups:
-- path: Assets/ProCamera2D/Examples/Platformer/Scenes/Cinematics.unity
+- path: Assets/Cenas/1.unity
   isLoaded: 1
   isActive: 1

@@ -8,7 +8,7 @@ namespace Com.LuisPedroFonseca.ProCamera2D
 
         void OnGUI()
         {
-            if (GUI.Button(new Rect(5, 5, 150, 30), "Shake"))
+            if (GUI.Button(new Rect(700, 5, 150, 30), "Shake"))
             {
                 var shakePreset = ProCamera2DShake.Instance.ShakePresets[Random.Range(0, ProCamera2DShake.Instance.ShakePresets.Count)];
                 Debug.Log("Shake: " + shakePreset.name);
@@ -16,7 +16,7 @@ namespace Com.LuisPedroFonseca.ProCamera2D
                 ProCamera2DShake.Instance.Shake(shakePreset);
             }
 
-            if (GUI.Button(new Rect(5, 45, 150, 30), _constantShaking ? "Stop Constant Shake" : "Constant Shake"))
+            if (GUI.Button(new Rect(700, 45, 150, 30), _constantShaking ? "Stop Constant Shake" : "Constant Shake"))
             {
                 if (_constantShaking)
                 {

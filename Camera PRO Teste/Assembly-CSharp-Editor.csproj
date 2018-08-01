@@ -94,10 +94,10 @@
     <Compile Include="Assets\ProCamera2D\Code\Triggers\Editor\ProCamera2DTriggerRailsEditor.cs" />
     <Compile Include="Assets\ProCamera2D\Code\Triggers\Editor\ProCamera2DTriggerZoomEditor.cs" />
     <Reference Include="UnityEditor.StandardEvents">
-      <HintPath>C:/Users/aluno/Desktop/Camera PRO Teste/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
+      <HintPath>C:/Users/aluno/Desktop/CameraPRO2D/Camera PRO Teste/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
     </Reference>
     <Reference Include="Unity.PackageManagerUI.Editor">
-      <HintPath>C:/Users/aluno/Desktop/Camera PRO Teste/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
+      <HintPath>C:/Users/aluno/Desktop/CameraPRO2D/Camera PRO Teste/Library/ScriptAssemblies/Unity.PackageManagerUI.Editor.dll</HintPath>
     </Reference>
     <Reference Include="UnityEngine.AIModule">
       <HintPath>C:/Program Files/Unity 5.4.0/Unity/Editor/Data/Managed/UnityEngine/UnityEngine.AIModule.dll</HintPath>

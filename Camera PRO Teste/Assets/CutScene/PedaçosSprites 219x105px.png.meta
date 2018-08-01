@@ -1,0 +1,594 @@
+fileFormatVersion: 2
+guid: 1a29370dbc2fd464088e3d5a33951b77
+timeCreated: 1532683121
+licenseType: Free
+TextureImporter:
+  fileIDToRecycleName:
+    21300000: "Peda\xE7osSprites 219x105px_0"
+    21300002: "Peda\xE7osSprites 219x105px_1"
+    21300004: "Peda\xE7osSprites 219x105px_2"
+    21300006: "Peda\xE7osSprites 219x105px_3"
+    21300008: "Peda\xE7osSprites 219x105px_4"
+    21300010: "Peda\xE7osSprites 219x105px_5"
+    21300012: "Peda\xE7osSprites 219x105px_6"
+    21300014: "Peda\xE7osSprites 219x105px_7"
+    21300016: "Peda\xE7osSprites 219x105px_8"
+    21300018: "Peda\xE7osSprites 219x105px_9"
+    21300020: "Peda\xE7osSprites 219x105px_10"
+    21300022: "Peda\xE7osSprites 219x105px_11"
+    21300024: "Peda\xE7osSprites 219x105px_12"
+    21300026: "Peda\xE7osSprites 219x105px_13"
+    21300028: "Peda\xE7osSprites 219x105px_14"
+    21300030: "Peda\xE7osSprites 219x105px_15"
+    21300032: "Peda\xE7osSprites 219x105px_16"
+    21300034: "Peda\xE7osSprites 219x105px_17"
+    21300036: "Peda\xE7osSprites 219x105px_18"
+    21300038: "Peda\xE7osSprites 219x105px_19"
+    21300040: "Peda\xE7osSprites 219x105px_20"
+    21300042: "Peda\xE7osSprites 219x105px_21"
+    21300044: "Peda\xE7osSprites 219x105px_22"
+    21300046: "Peda\xE7osSprites 219x105px_23"
+    21300048: "Peda\xE7osSprites 219x105px_24"
+    21300050: "Peda\xE7osSprites 219x105px_25"
+    21300052: "Peda\xE7osSprites 219x105px_26"
+    21300054: "Peda\xE7osSprites 219x105px_27"
+    21300056: "Peda\xE7osSprites 219x105px_28"
+    21300058: "Peda\xE7osSprites 219x105px_29"
+    21300060: "Peda\xE7osSprites 219x105px_30"
+    21300062: "Peda\xE7osSprites 219x105px_31"
+    21300064: "Peda\xE7osSprites 219x105px_32"
+    21300066: "Peda\xE7osSprites 219x105px_33"
+    21300068: "Peda\xE7osSprites 219x105px_34"
+    21300070: "Peda\xE7osSprites 219x105px_35"
+    21300072: "Peda\xE7osSprites 219x105px_36"
+    21300074: "Peda\xE7osSprites 219x105px_37"
+    21300076: "Peda\xE7osSprites 219x105px_38"
+    21300078: "Peda\xE7osSprites 219x105px_39"
+    21300080: "Peda\xE7osSprites 219x105px_40"
+    21300082: "Peda\xE7osSprites 219x105px_41"
+    21300084: "Peda\xE7osSprites 219x105px_42"
+    21300086: "Peda\xE7osSprites 219x105px_43"
+    21300088: "Peda\xE7osSprites 219x105px_44"
+    21300090: "Peda\xE7osSprites 219x105px_45"
+    21300092: "Peda\xE7osSprites 219x105px_46"
+    21300094: "Peda\xE7osSprites 219x105px_47"
+    21300096: "Peda\xE7osSprites 219x105px_48"
+    21300098: "Peda\xE7osSprites 219x105px_49"
+    21300100: "Peda\xE7osSprites 219x105px_50"
+    21300102: "Peda\xE7osSprites 219x105px_51"
+    21300104: "Peda\xE7osSprites 219x105px_52"
+    21300106: "Peda\xE7osSprites 219x105px_53"
+    21300108: "Peda\xE7osSprites 219x105px_54"
+    21300110: "Peda\xE7osSprites 219x105px_55"
+    21300112: "Peda\xE7osSprites 219x105px_56"
+    21300114: "Peda\xE7osSprites 219x105px_57"
+    21300116: "Peda\xE7osSprites 219x105px_58"
+    21300118: "Peda\xE7osSprites 219x105px_59"
+    21300120: "Peda\xE7osSprites 219x105px_60"
+    21300122: "Peda\xE7osSprites 219x105px_61"
+    21300124: "Peda\xE7osSprites 219x105px_62"
+    21300126: "Peda\xE7osSprites 219x105px_63"
+    21300128: "Peda\xE7osSprites 219x105px_64"
+    21300130: "Peda\xE7osSprites 219x105px_65"
+    21300132: "Peda\xE7osSprites 219x105px_66"
+    21300134: "Peda\xE7osSprites 219x105px_67"
+    21300136: "Peda\xE7osSprites 219x105px_68"
+    21300138: "Peda\xE7osSprites 219x105px_69"
+    21300140: "Peda\xE7osSprites 219x105px_70"
+    21300142: "Peda\xE7osSprites 219x105px_71"
+    21300144: "Peda\xE7osSprites 219x105px_72"
+    21300146: "Peda\xE7osSprites 219x105px_73"
+    21300148: "Peda\xE7osSprites 219x105px_74"
+    21300150: "Peda\xE7osSprites 219x105px_75"
+    21300152: "Peda\xE7osSprites 219x105px_76"
+    21300154: "Peda\xE7osSprites 219x105px_77"
+    21300156: "Peda\xE7osSprites 219x105px_78"
+    21300158: "Peda\xE7osSprites 219x105px_79"
+    21300160: "Peda\xE7osSprites 219x105px_80"
+    21300162: "Peda\xE7osSprites 219x105px_81"
+    21300164: "Peda\xE7osSprites 219x105px_82"
+    21300166: "Peda\xE7osSprites 219x105px_83"
+    21300168: "Peda\xE7osSprites 219x105px_84"
+    21300170: "Peda\xE7osSprites 219x105px_85"
+    21300172: "Peda\xE7osSprites 219x105px_86"
+    21300174: "Peda\xE7osSprites 219x105px_87"
+    21300176: "Peda\xE7osSprites 219x105px_88"
+    21300178: "Peda\xE7osSprites 219x105px_89"
+    21300180: "Peda\xE7osSprites 219x105px_90"
+    21300182: "Peda\xE7osSprites 219x105px_91"
+    21300184: "Peda\xE7osSprites 219x105px_92"
+    21300186: "Peda\xE7osSprites 219x105px_93"
+    21300188: "Peda\xE7osSprites 219x105px_94"
+    21300190: "Peda\xE7osSprites 219x105px_95"
+    21300192: "Peda\xE7osSprites 219x105px_96"
+    21300194: "Peda\xE7osSprites 219x105px_97"
+    21300196: "Peda\xE7osSprites 219x105px_98"
+    21300198: "Peda\xE7osSprites 219x105px_99"
+    21300200: "Peda\xE7osSprites 219x105px_100"
+    21300202: "Peda\xE7osSprites 219x105px_101"
+  serializedVersion: 4
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    filterMode: -1
+    aniso: -1
+    mipBias: -1
+    wrapMode: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spritePixelsToUnits: 64
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  platformSettings:
+  - buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  - buildTarget: Standalone
+    maxTextureSize: 2048
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_14"
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 315
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_15"
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 315
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_16"
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 315
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_17"
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 315
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_18"
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 210
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_20"
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 210
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_35"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 210
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_36"
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 210
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_89"
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 0
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_91"
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 0
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_94"
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 0
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_97"
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 0
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_100"
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 0
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_101"
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 0
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_0"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 315
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_1"
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 315
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_2"
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 315
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_3"
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 315
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_4"
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 210
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_5"
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 210
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_6"
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 210
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_7"
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 210
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_8"
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 105
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_9"
+      rect:
+        serializedVersion: 2
+        x: 1314
+        y: 105
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_10"
+      rect:
+        serializedVersion: 2
+        x: 1095
+        y: 105
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_11"
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 105
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_12"
+      rect:
+        serializedVersion: 2
+        x: 657
+        y: 105
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_13"
+      rect:
+        serializedVersion: 2
+        x: 438
+        y: 105
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_19"
+      rect:
+        serializedVersion: 2
+        x: 219
+        y: 105
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_21"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 105
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_22"
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    - serializedVersion: 2
+      name: "Peda\xE7osSprites 219x105px_23"
+      rect:
+        serializedVersion: 2
+        x: 1533
+        y: 0
+        width: 219
+        height: 105
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      tessellationDetail: 0
+    outline: []
+  spritePackingTag: 
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
